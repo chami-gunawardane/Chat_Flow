@@ -84,6 +84,96 @@
 
       }
 
+      .professional {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: rgba(245, 172, 118, 1);
+        border-radius: 10px 10px 0px 0px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.23px;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+
+      .professional-price {
+        font-family: 'DM Sans';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.66px;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+
+      }
+
+      .professional-choose {
+        text-align: center;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: white;
+        background-color: rgba(245, 172, 118, 1);
+        border-radius: 10px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        width: 300px;
+        height: 50px; 
+        margin-left: 30px;
+        margin-top: 10px;
+        border: none;
+      }
+
+      .enterprise {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: rgba(255, 83, 145, 1);
+        border-radius: 10px 10px 0px 0px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.23px;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+
+      .enterprise-price {
+        font-family: 'DM Sans';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.66px;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+
+      }
+
+      .enterprise-choose {
+        text-align: center;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: white;
+        background-color: rgba(255, 83, 145, 1);
+        border-radius: 10px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        width: 300px;
+        height: 50px; 
+        margin-left: 30px;
+        margin-top: 10px;
+        border: none;
+      }
+
       .starter-body {
         font-family: DM Sans;
         font-size: 16px;
@@ -110,26 +200,26 @@
         margin-top: 2px;
       }
 
-      .choose {
-    text-align: center;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: white;
-    background-color: rgba(70, 53, 243, 1);
-    border-radius: 10px;
-    font-family: 'DM Sans';
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-    width: 300px;
-    height: 50px; 
-    margin-left: 30px;
-    margin-top: 10px;
-    border: none;
-}
+      .starter-choose {
+        text-align: center;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: white;
+        background-color: rgba(70, 53, 243, 1);
+        border-radius: 10px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        width: 300px;
+        height: 50px; 
+        margin-left: 30px;
+        margin-top: 10px;
+        border: none;
+      } 
 
       .horizontal-line {
         height: 1px;
@@ -139,6 +229,14 @@
         margin-top: -20px;
         margin-bottom: 20px;
       }
+
+      .final-card {
+        display: grid;
+        grid-template-columns: repeat(3, 400px); 
+        margin-left: 10px;
+        margin-top: 40px;
+}
+      
 
     </style>
 
@@ -285,7 +383,7 @@
     
   </section>
 
-  <section>
+  <section class="business">
     <div class="business-main-text">
       Affordable Plans for Any Business
     </div>
@@ -294,36 +392,99 @@
       Our pricing plans are designed to be affordable for businesses of all sizes. From our "Starter" plan to our "Enterprise" option, we have a plan that will fit your budget and meet your live chat needs.
     </div>
 
-    <div class="card">
-        <div class="starter">STARTER</div> 
-        <div class="starter-price">
-            <p>$9.99/month</p>
-        </div>
-        <div class="horizontal-line">
+    <div class="final-card">
+      <!-- Card 1 -->
+      <div class="card">
+          <div class="starter">STARTER</div>
+          <div class="starter-price">
+              <p>$9.99/month</p>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="starter-body">
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Real-time chat</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Customization options</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">File sharing</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Visitor tracking</p>
+              </div>
+              <button class="starter-choose">Choose</button>
+          </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="card">
+          <div class="professional">PROFESSIONAL</div>
+          <div class="professional-price">
+              <p>$29.99/month</p>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="starter-body">
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">All features in the "Starter" plan</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Mobile App</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Integration with other tolls</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Multilingual support</p>
+              </div>
+              <button class="professional-choose">Choose</button>
+          </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="card">
+          <div class="enterprise">ENTERPRISE</div>
+          <div class="enterprise-price">
+              <p>$99.99/month</p>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="starter-body">
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">All features in "Professional" plan</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Dedicated account manager</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Premium support</p>
+              </div>
+              <div class="tool">
+                  <img class="kit" src="images/Frame.png">
+                  <p class="toolkit">Custom integration options</p>
+              </div>
+              <button class="enterprise-choose">Choose</button>
+          </div>
+      </div>
+  </div>
+  
+
+            
+
+
+            
 
         </div>
-
-        <div class="starter-body">
-
-         <div class="tool">
-          <img class="kit" src="images/Frame.png" >
-          <p class="toolkit">Real-time chat</p>
-         </div>
-         <div class="tool">
-          <img  class="kit" src="images/Frame.png" >
-          <p class="toolkit">Customization options</p>
-         </div>
-         <div class="tool">
-          <img class="kit" src="images/Frame.png" >
-          <p class="toolkit">File sharing</p>
-         </div>
-         <div class="tool">
-          <img class="kit" src="images/Frame.png" >
-          <p class="toolkit">Visitor tracking</p>
-         </div>
-
-        <button class="choose">Choose</button> 
-      </div> 
     
   </section>
 
